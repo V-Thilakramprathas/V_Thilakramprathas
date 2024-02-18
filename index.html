@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS List Check</title>
+	<style type="text/css">
+		p,#p{
+			display: none;
+			margin-top: 20px;	
+			margin-left: 25px;
+		}
+		.frame{
+			overflow-y: scroll;
+			background-color: lightyellow;
+			width: 60%;
+			height: 500px;
+			margin: 0 auto;
+			margin-top: 50px;
+			box-shadow: 0px 0px 50px black;
+			border: 2px solid black;
+			
+		}
+		.head{
+			background-color: rgba(0,0,0,0.1);
+			margin: 0 auto; 
+			background-color: lightyellow;
+			position: fixed;
+		}
+	</style>
+	<script type="text/javascript">
+		var a=[];
+		var s,l,i,j,n=9;
+		function check(){
+			a[0]=document.getElementById('kadugu100g');
+			a[1]=document.getElementById('kadugu50g');
+			a[2]=document.getElementById('kadugu250g');
+			a[3]=document.getElementById('kadugu500g');
+			a[4]=document.getElementById('sugar');
+			a[5]=document.getElementById('bran50kg');
+			a[6]=document.getElementById('Vel5KG');
+			a[7]=document.getElementById('vel10kg');
+			a[8]=document.getElementById('vel26kg');
+			s=document.getElementById('search').value;
+			l=s.length;
+			for(i=0;i<n;i++){
+				for(j=0;j<s.length;j++){
+					if(s[j].toLowerCase()==a[i].innerHTML[j].toLowerCase()){
+						a[i].style.display="block";
+						console.log(s);
+					}
+					else{
+						a[i].style.display="none";
+						break;
+					}
+				}
+			}	
+		}
+		function alla(){
+			a[0]=document.getElementById('kadugu100g');
+			a[1]=document.getElementById('kadugu50g');
+			a[2]=document.getElementById('kadugu250g');
+			a[3]=document.getElementById('kadugu500g');
+			a[4]=document.getElementById('sugar');
+			a[5]=document.getElementById('bran50kg');
+			a[6]=document.getElementById('Vel5KG');
+			a[7]=document.getElementById('vel10kg');
+			a[8]=document.getElementById('vel26kg');
+			for(i=0;i<n;i++){
+			a[i].style.display="block";	
+		}	
+		}
+		function closea(){
+			document.getElementById('frame').style.display="none";		
+		}
+	</script>
+</head>
+<body>
+	<div class="frame" id="frame">
+<div class="head" id="head"><br> &nbsp; &nbsp; &nbsp; Enter the Name :<input type="search" id="search" onkeyup="check();" ><button style="margin-left: 10px;" onclick="alla();">ALL</button> <button style="margin-left: 10px;"  onclick="closea();">Close</button><br><br></div><br><br><br>
+
+<p id="kadugu100g">kadugu 100g</p>
+<p id="kadugu50g">kadugu 50g</p>
+<p id="kadugu250g">kadugu 250g</p>
+<p id="kadugu500g">kadugu 500g</p>
+<p id="sugar">sugar</p>
+<p id="bran50kg">Bran 50kg</p>
+<p id="Vel5KG">Vel 5KG</p>
+<p id="vel10kg">vel 10kg</p>
+<p id="vel26kg">vel 26kg</p></div>	
+</body>
+</html>
