@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BSC CS 2ed Year, JAC</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    #bulb{
+    width:5%;
+    height:5%;
+    }
+    #nf{
+    display:none;}
+    #oxim{
+    width:300px;
+    height:300px;
+    margin:0 40%;
+    margin-top:5%;
+    }</style>
+</head>
+<body id="body">
+<img src="1.jpg" id="bulb" onclick="t();" style="transform:rotate(130deg); margin:0 0;">
+<div id="bodyfull">
+<div class="top">
+<img src="logo.jpg" width=3% style="position: absolute;">
+<p class="m"><a href="https://youtube.com/@s.v.t.gaming">My Channel</a></p>
+<h1 class="l" onclick="logi();" id="l">LOGIN</h1></div><br><div class="login" id="login"><br><br><span id="user"></span></div>
+<div class="menu">
+<ul class="ul" id="bor">
+	<li class="li" id="li"><a href="#">Books</a>
+		<ul><li class="li2"><a href="dd.pdf">DD Book</a></li>
+		<li><a href="html.pdf">HTML BOOK</a></li></ul>
+	</li>
+
+	<li class="li"><a href="#">Programs</a>
+		<ul><li><a href="cp.pdf">C Program</a></li>
+		<li><a href="all.pdf">C++ and Linux Program</a></li>
+		<li><a href="java.pdf">Java Program</a></li>
+		</ul>
+	</li>
+
+	<li class="li"><a href="#">Compilers</a>
+		<ul><li><a href="https://www.programiz.com/c-programming/online-compiler/">C Cmpiler</a></li>
+		<li><a href="https://www.programiz.com/cpp-programming/online-compiler/">C++ Compiler</a></li>
+		<li><a href="https://www.tutorialspoint.com/execute_bash_online.php">Limux Compiler</a></li>
+		<li><a href="https://www.programiz.com/java-programming/online-compiler/">Java Compiler</a></li>
+		<li><a href="https://www.tutorialspoint.com/online_html_editor.php">HTML Compiler</a></li></ul>
+	</li>
+	<li class="li" ><a href="#">HTML Outputs</a>
+		<ul><li><a href="1st.html">1st Program</a></li>
+		<li><a href="2ed.html">2ed Program</a></li>
+		<li><a href="3ed.html">3ed Program</a></li>
+        <li><a href="4th.html">4th Program</a></li>
+        <li><a href="5th.html">5th Program</a></li>
+        <li><a href="6th.html">6th Program</a></li>
+        <li><a href="7th.html">7th Program</a></li>
+        <li><a href="8th.html">8th Program</a></li></ul>
+	</li>
+
+	<li class="li" id="li2"><a href="#">Time Tample</a></li>
+</ul>
+</div><br>
+<div class="bodyc" id="bodyc">
+<div class="aside">
+	<aside>
+		<u><h1>Download</h1></u>
+		<a href="https://bit.ly/3CJ3jUV">Insta Pro APK</a><br><br>
+		<a href="https://www.kinemaster.pro/#dl">KineMaster Pro APK</a><br><br>
+		<a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=416&field_operating_system_target_id=436&field_architecture_target_id=386&field_java_package_target_id=All">JDK Download</a><br><br>
+		<a href="https://en.softonic.com/download/sublime-text/windows/post-download">Best Notepate for HTML Learn Download</a><br><br>
+
+       <a href="riyaz.apk" downloads>CRICKET SCORE</a><br><br>
+       <a href="https://r.search.yahoo.com/_ylt=AwrgMLnsL5Rlkn46ZGhXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1704239213/RO=10/RU=https%3a%2f%2fwww.python.org%2fdownloads%2f/RK=2/RS=zUnUVCaTi8kaT6_EKMAo2.67Emo-">Python IDLE</a><br><br>
+        <a href="https://r.search.yahoo.com/_ylt=AwrjYNw1MZRllII6EllXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1704239541/RO=10/RU=https%3a%2f%2fdeveloperinsider.co%2fdownload-turbo-c-for-windows-7-8-8-1-and-windows-10-32-64-bit-full-screen%2f/RK=2/RS=Hy0XwHv7eUyxxgODx3rZD_5eftM-">Turbo C++</a>
+        
+	</aside>
+</div>
+<div class="center">
+	<a href="1st.html"><img src="1st.jpg"></a>
+    <a href="2ed.html"><img src="2ed.jpg"></a>
+	<a href="3ed.html"><img src="3ed.jpg"></a>
+    <a href="4th.html"><img src="4th.jpg"></a>
+    <a href="5th.html"><img src="5th.jpg"></a>
+    <a href="digital.html"><img src="dd1.JPG"></a><br>
+
+
+</div></div></div>
+<div id="nf"><h1 style="text-align:center;color:red">My Games </h1>
+  <a href="ox.html"><img src="ox.jpg" id="oxim"><br><h2 style="text-align:center; color:black; margin:0;">OX Game</h2></a>
+  </div>
+<script >
+	document.body.style.backgroundColor=localStorage.getItem('bc');
+	document.getElementById('user').innerHTML="User Name :"+localStorage.getItem('uname')+"<br> Password :"+localStorage.getItem('pass');
+		var l=document.getElementById('l').innerHTML=localStorage.getItem('uname');
+		const n=document.getElementById('l');
+		const body=document.getElementById('body').addEventListener('click',()=>{
+			document.getElementById('login').style.display='none';
+		})
+function logi() {
+	document.getElementById('login').style.display='block';
+	
+}
+ var bul=0;
+   function t(){
+    if(bul==0){
+    bul=1;
+    document.getElementById('bulb').src="b2.jpg";
+    document.getElementById('body').style.backgroundColor="white";
+    document.getElementById('bodyfull').style.display="none";
+     document.getElementById('nf').style.display="block";
+    }
+    else{
+    document.getElementById('bulb').src="1.jpg";
+    document.getElementById('body').style.backgroundColor="black";
+      document.getElementById('bodyfull').style.display="block";
+       document.getElementById('nf').style.display="none";
+    bul=0;
+    }
+    }
+	</script>
+</body>
+</html>
