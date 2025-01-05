@@ -1,0 +1,1 @@
+This app used to calculate Students Coming days and find percentage of 75. It's useful for college staff.

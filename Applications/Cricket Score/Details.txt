@@ -1,0 +1,2 @@
+This Application used to score the run at playing time.
+it's useful of run counter.
