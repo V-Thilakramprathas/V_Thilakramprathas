@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSI JAC</title>
+    <style>
+        body{
+            padding: 2%;
+        }
+        table{
+            border-collapse: collapse;
+            width: 90%;
+        }
+        table td,th{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        .bottom{
+            margin: 0 auto;
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    <script>
+        function addname(n){
+            if(n=="name"){
+                document.querySelector('#name').innerHTML=" "+prompt("Enter Name");
+            }
+            else if(n=="nstudy"){
+                document.querySelector('#nstudy').innerHTML=" "+prompt("Enter Class Now Studying :");
+            }
+            else if(n=="r11"){
+                document.querySelector('.r11').innerHTML=" "+prompt("Enter District")
+            }
+            else if(n=="r21"){
+                document.querySelector('.r21').innerHTML=" "+prompt("Enter District")
+            }
+            else if(n=="r31"){
+                document.querySelector('.r31').innerHTML=" "+prompt("Enter District")
+            }
+            else if(n=="r41"){
+                document.querySelector('.r41').innerHTML=" "+prompt("Enter District")
+            }
+            else if(n=="r51"){
+                document.querySelector('.r51').innerHTML=" "+prompt("Enter District")
+            }
+            else if(n=="r61"){
+                document.querySelector('.r61').innerHTML=" "+prompt("Enter District")
+            }
+            else if(n=="r71"){
+                document.querySelector('.r71').innerHTML=" "+prompt("Enter District")
+            }
+
+            else if(n=="r12"){
+                document.querySelector('.r12').innerHTML=" "+prompt("Enter School Studied")
+            }
+            else if(n=="r22"){
+                document.querySelector('.r22').innerHTML=" "+prompt("Enter School Studied")
+            }
+            else if(n=="r32"){
+                document.querySelector('.r32').innerHTML=" "+prompt("Enter School Studied")
+            }
+            else if(n=="r42"){
+                document.querySelector('.r42').innerHTML=" "+prompt("Enter School Studied")
+            }
+            else if(n=="r52"){
+                document.querySelector('.r52').innerHTML=" "+prompt("Enter School Studied")
+            }
+            else if(n=="r62"){
+                document.querySelector('.r62').innerHTML=" "+prompt("Enter School Studied")
+            }
+            else if(n=="r72"){
+                document.querySelector('.r72').innerHTML=" "+prompt("Enter School Studied")
+            }
+
+            else if(n=="r13"){
+                document.querySelector('.r13').innerHTML=" "+prompt("Enter Type of School")
+            }
+            else if(n=="r23"){
+                document.querySelector('.r23').innerHTML=" "+prompt("Enter Type of School")
+            }
+            else if(n=="r33"){
+                document.querySelector('.r33').innerHTML=" "+prompt("Enter Type of School")
+            }
+            else if(n=="r43"){
+                document.querySelector('.r43').innerHTML=" "+prompt("Enter Type of School")
+            }
+            else if(n=="r53"){
+                document.querySelector('.r53').innerHTML=" "+prompt("Enter Type of School")
+            }
+            else if(n=="r63"){
+                document.querySelector('.r63').innerHTML=" "+prompt("Enter Type of School")
+            }
+            else if(n=="r73"){
+                document.querySelector('.r73').innerHTML=" "+prompt("Enter Type of School")
+            }
+
+            else if(n=="r14"){
+                document.querySelector('.r14').innerHTML=" "+prompt("Enter Acadamic Year")
+            }
+            else if(n=="r24"){
+                document.querySelector('.r24').innerHTML=" "+prompt("Enter Acadamic Year")
+            }
+            else if(n=="r34"){
+                document.querySelector('.r34').innerHTML=" "+prompt("Enter Acadamic Year")
+            }
+            else if(n=="r44"){
+                document.querySelector('.r44').innerHTML=" "+prompt("Enter Acadamic Year")
+            }
+            else if(n=="r54"){
+                document.querySelector('.r54').innerHTML=" "+prompt("Enter Acadamic Year")
+            }
+            else if(n=="r64"){
+                document.querySelector('.r64').innerHTML=" "+prompt("Enter Acadamic Year")
+            }
+            else if(n=="r74"){
+                document.querySelector('.r74').innerHTML=" "+prompt("Enter Acadamic Year")
+            }
+        }
+        function printform(){
+            document.getElementById('button').style.display="none";
+            print();
+        }
+    </script>
+</head>
+<body><br><br><br><br>
+    <label for="name" onclick="addname('name')">Name of the Student :</label> <label id="name"></label><br><br>
+    <label for="nstudy" onclick="addname('nstudy')">Class now studying &nbsp; :</label> <label id="nstudy"></label><br><br><br>
+   <center>
+    <table>
+        <tr>
+            <th>Class</th><th>District</th><th>Name of the School studied</th><th>Type of School Govt./ Govt.Aided/ Private</th><th>Academic year of Study</th>
+        </tr>
+        <tr><th>12<sup>th</sup></th><td class="r11" onclick="addname('r11')"></td><td class="r12" onclick="addname('r12')"></td><td class="r13" onclick="addname('r13')"></td><td class="r14" onclick="addname('r14')"></td></tr>
+        <tr><th>11<sup>th</sup></th><td class="r21" onclick="addname('r21')"></td><td class="r22" onclick="addname('r22')"></td><td class="r23" onclick="addname('r23')"></td><td class="r24" onclick="addname('r24')"></td></tr>
+        <tr><th>10<sup>th</sup></th><td class="r31" onclick="addname('r31')"></td><td class="r32" onclick="addname('r32')"></td><td class="r33" onclick="addname('r33')"></td><td class="r34" onclick="addname('r34')"></td></tr>
+        <tr><th>9<sup>th</sup></th><td class="r41" onclick="addname('r41')"></td><td class="r42" onclick="addname('r42')"></td><td class="r43" onclick="addname('r43')"></td><td class="r44" onclick="addname('r44')"></td></tr>
+        <tr><th>8<sup>th</sup></th><td class="r51" onclick="addname('r51')"></td><td class="r52" onclick="addname('r52')"></td><td class="r53" onclick="addname('r53')"></td><td class="r54" onclick="addname('r54')"></td></tr>
+        <tr><th>7<sup>th</sup></th><td class="r61" onclick="addname('r61')"></td><td class="r62" onclick="addname('r62')"></td><td class="r63" onclick="addname('r63')"></td><td class="r64" onclick="addname('r64')"></td></tr>
+        <tr><th>6<sup>th</sup></th><td class="r71" onclick="addname('r71')"></td><td class="r72" onclick="addname('r72')"></td><td class="r73" onclick="addname('r73')"></td><td class="r74" onclick="addname('r74')"></td></tr>
+    </table>
+   </center><br><br><br><br><br>
+    <div class="bottom"><p>Signature of the UMIS Coordinator</p>
+    <p>Signature of the Student</p>
+    </div>
+    <button onclick="printform()" id="button">Save</button>
+</body>
+</html>
