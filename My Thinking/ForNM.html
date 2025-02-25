@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NM</title>
+    <script>
+        function makeChange(){
+            document.getElementById("username").value=document.getElementById("username").value.toLowerCase()+"@nm2025.in";
+            document.getElementById('form').submit();
+            document.cookie="MOODLEID1_='',path='/'";
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <form action="https://eduvate.ind.in/login/index.php" method="GET" id="form">
+            Enter Your NM ID : <input type="text" name="username" id="username">
+            <input type="hidden" name="token" value="Student@2024">
+            <button onclick="makeChange();" type="button">Submit</button>
+        </form>
+    </center>
+</body>
+</html>
