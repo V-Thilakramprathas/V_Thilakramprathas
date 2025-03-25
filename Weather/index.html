@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="Script/script.js"></script>
+    <link rel="icon" href="Images/cloud.png">
+    <link rel="stylesheet" href="Style/style.css">
+   
+    </head>
+<body>
+    <script>
+        window.scrollTo(1, 1);
+    </script>
+    <h1>Today Weather</h1>
+    <div class="search" style="background-image: url(Images/background.jpg);">
+        <img src="Images/cloud.png" alt="weatherimage" class="image1">
+        <input type="search" id="search" placeholder="Search City or Postcode"><button
+            onclick="getWeather();">Search</button>
+        <p class="error" style="color: red;font-size: 1.2rem;float: left;margin-left: 13%;background-color: black;border-radius: 15px;"></p>
+    </div>
+    <div class="details">
+        <div class="heading">
+            <div class="name">
+                <h3>Weather Today in <span class="city-name" style="margin: 0;"></span></h3>
+            </div>
+        </div>
+        <div class="top">
+            <div class="left">
+                <div class="temp">
+                    
+                    <p><img src="Images/temp.png"><span class="weather-temp"></span></p>
+                </div>
+                <div class="air">
+                    <p><img src="Images/wind.png"><span class="wind"></span></p>
+                </div>             
+            </div>
+            <div class="right">
+                
+                <div class="pressur">
+                    <p><img src="Images/pressure.png" style="width: 50px;"><span class="pressure" style="margin: 0;"></span></p>
+                </div>
+                <div class="humidit">
+                    <p> <img src="Images/humidity.png" style="width: 50px;"><span class="humidity" style="margin: 0;"></span></p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="srise">
+                <p><img src="Images/sunrises.png" style="width: 50px;"> <span class="sunrise"></span></p>
+            </div>
+            <div class="sset">
+                <p><img src="Images/sunset.png" style="width: 50px;"><span class="sunset"></span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

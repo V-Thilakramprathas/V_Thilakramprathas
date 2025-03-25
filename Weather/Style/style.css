@@ -1,0 +1,88 @@
+
+*{
+    scroll-behavior: smooth;
+}
+h1{
+    color:cyan;
+    text-align: center;
+}
+body{
+    background-color: black;
+    color: cyan;
+    height: 1000px;
+    align-items: center;
+}
+.search{
+    background-size: 100% 100%;
+    width: 50%;
+    background-color: lightblue;
+    border-radius: 50px;
+    padding: 1% 5% 7% 5%;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+p{
+    display: inline-flex;
+    align-items: center;
+}
+.search input{
+    padding: 3%;
+    width: 60%;
+    border-radius: 25px 0 0 25px;
+    color: cyan;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.search button{
+    padding: 3%;
+    border:none;
+    width: 20%;
+    border-radius: 0 25px 25px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: cyan;
+    transition: scale 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    scale: 1.2;
+    box-shadow: 0 0 5px yellow,0 0 15px yellow,0 0 25px yellow,0 0 35px yellow;
+}
+input:hover,input:focus{
+    cursor: pointer;
+    box-shadow: 0 0 5px yellow,0 0 15px yellow,0 0 25px yellow,0 0 35px yellow;
+}
+::placeholder{
+    color:rgba(0, 255, 255,0.8);
+}
+.image1{
+    display: block;
+    margin: 5% auto;
+    width: 100px;
+}
+.details{
+    font-size: 1.3rem;
+    padding: 3%;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.details div{
+    flex: 1;
+}
+.top{
+    display: flex;
+}
+.top div{
+    flex: 1;
+}
+span{
+    margin-left: 5%;
+}
+.bottom{
+    padding: 0 25% 0 25%;
+    display: flex;
+}
