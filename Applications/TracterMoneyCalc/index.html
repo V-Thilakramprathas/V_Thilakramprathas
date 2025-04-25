@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .fullbody{
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 3%;
+            background-color: black;
+            box-shadow: 0 0 5px gray,0 0 15px gray,0 0 25px gray,0 0 50px gray;
+            height: 400px;
+            padding: 1%;
+            border-radius: 25px;
+        }
+        .disp{
+            background-color: rgba(0, 235, 235,0.3);
+            margin:5% 5% 5% 5%;
+            padding: 5%;
+            border: 2px solid rgba(0, 255, 255, 0.445);
+            box-shadow: inset 0 0 25px  rgba(0, 255, 255, 0.445);
+        }
+        input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+        input,label{
+            background-color: rgba(0, 0, 0, 0);
+            border:none;
+            width: 95%;
+            margin: 0 auto;
+            padding: 2%;
+            color:cyan;
+            outline:none;
+            font-size: 2rem;
+        }
+        #input{
+            text-align: right;
+        }
+        button{
+            text-align: center;
+            margin:0 5%;
+            padding:2%;
+            width: 20%;
+            background-color: black;
+            color:cyan;
+            border: 1px solid cyan;
+            }
+            button:hover{
+                background-color: rgba(0, 255, 255, 0.436);
+                box-shadow: 0 0 5px cyan,0 0 10px cyan,0 0 15px cyan;
+            }
+            #clr{
+                color: red;
+                border-color: red;
+            }
+            #clr:hover{
+                background-color:rgba(255, 0, 0, 0.457);
+                box-shadow: 0 0 5px red,0 0 10px red,0 0 15px red;
+            }
+    </style>
+    <script>
+        var time=0;
+        function add(){
+            var temp=document.getElementById('input');
+            var history=document.getElementById('pri');
+            
+            if(temp.value==""){
+                temp.focus();
+            }
+            else{
+                time=time+parseFloat(temp.value);
+                if(history.innerHTML=="")
+            {
+                history.innerHTML=history.innerHTML+temp.value;
+            }
+            else{
+                history.innerHTML=history.innerHTML+"+"+temp.value;
+            }
+                temp.value="";
+                temp.focus();
+            }
+        }
+        function calc(){
+            document.getElementById('input').value=time*15;
+            var tt=(time/60)*10;
+            tt=Math.floor(tt%10);
+            document.getElementById('output').innerHTML="Time :"+Math.floor(time/60)+"Hr"+tt*6+"Min<br>Rs :"+time*15;
+        }
+        function clearall(){
+            time=0;
+            document.getElementById('pri').innerHTML="";
+            document.getElementById('output').innerHTML="";
+            document.getElementById('input').value="";
+        }
+    </script>
+    <title>Run Time Money Calculator</title>
+</head>
+<body>
+    <div class="fullbody">
+        <div class="disp">
+            <label id="pri"></label><br>
+            <input type="number" id="input">
+        </div>
+        <div class="body">
+            <div>
+                <center>
+                    <button id="clr" onclick="clearall()">CLEAR</button>
+                    <button class="Calculate" onclick="calc()">Calculate</button>
+                    <button class="add" onclick="add()">ADD</button><br><br>
+                    <label id="output"></label>
+                </center>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
