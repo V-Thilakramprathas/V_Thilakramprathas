@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .fullbody{
-            position:relative;
-            width: 95%;
+            width: 90%;
             margin: 0 auto;
             margin-top: 3%;
             background-color: black;
             box-shadow: 0 0 5px gray,0 0 15px gray,0 0 25px gray,0 0 50px gray;
-            height: 600px;
+            height: 400px;
             padding: 1%;
             border-radius: 25px;
         }
@@ -33,15 +32,15 @@
             padding: 2%;
             color:cyan;
             outline:none;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
         #input{
             text-align: right;
         }
         button{
             text-align: center;
-            margin:0 2%;
-            padding:1.8%;
+            margin:0 5%;
+            padding:2%;
             width: 20%;
             background-color: black;
             color:cyan;
@@ -61,6 +60,15 @@
             }
     </style>
     <script>
+        var today=localStorage.getItem("today");
+        console.log(today);
+       if(today==null){
+         var date=new Date();
+        if(date.getDate()==29 && (date.getMonth()+1)==6){
+            window.location.href="wish.html";
+        }
+       }
+       localStorage.removeItem("today");
         var time=0;
         function add(){
             var temp=document.getElementById('input');
@@ -107,14 +115,12 @@
             <div>
                 <center>
                     <button id="clr" onclick="clearall()">CLEAR</button>
-                    <button class="Calculate" onclick="calc()">Calc</button>
+                    <button class="Calculate" onclick="calc()">Calculate</button>
                     <button class="add" onclick="add()">ADD</button><br><br>
                     <label id="output"></label>
                 </center>
            </div>
-            <footer><center><img src="banu.png" style="width:100px;position:absolute;bottom:0;left:35%;"></center></footer>
         </div>
-        
     </div>
 </body>
 </html>
