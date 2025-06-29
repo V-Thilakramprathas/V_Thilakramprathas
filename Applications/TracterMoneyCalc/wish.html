@@ -1,0 +1,177 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday To You</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #img1 {
+            animation: img1 2s;
+            display: block;
+        }
+
+        @keyframes img1 {
+            0% {
+                transform: scale(100, 100);
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+
+            padding: 1%;
+
+            animation: frnd 5s infinite;
+        }
+
+        #text {
+            z-index: 4;
+            position: absolute;
+            margin: 33% 0 0 40%;
+            background-color: black;
+            display: inline-flex;
+            animation: animi1 3s;
+
+        }
+
+        @keyframes animi1 {
+            0% {
+                z-index: -1;
+                transform: scale(0, 0);
+            }
+
+            50% {
+
+                transform: scale(0, 0);
+            }
+
+            90% {
+                transform: scale(1.2, 1.2);
+            }
+        }
+
+        @keyframes frnd {
+            0% {
+                background: linear-gradient(to right, aqua, fuchsia, yellow, orangered);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+
+            10% {
+                background: linear-gradient(to bottom right, fuchsia, yellow, white, aqua);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+
+            20% {
+                background: linear-gradient(to top left, white, aqua, fuchsia, yellow);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+
+            30% {
+                background: linear-gradient(to top, yellow, fuchsia, aqua, orangered);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+
+            40% {
+                background: linear-gradient(to left, aqua, white, fuchsia, yellow);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+
+            50% {
+                background: linear-gradient(to top right, white, aqua, yellow, fuchsia);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+
+            60% {
+                background: linear-gradient(to bottom left, yellow, white, orangered, aqua);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+
+            70% {
+                background: linear-gradient(to right, orangered, aqua, white, fuchsia);
+                background-clip: text;
+                color: transparent;
+            }
+
+            80% {
+                background: linear-gradient(to bottom, fuchsia, yellow, white, aqua);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+
+            90% {
+                background: linear-gradient(to top left, aqua, white, orangered, fuchsia);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+
+            100% {
+                background: linear-gradient(to top, white, aqua, yellow, fuchsia);
+                background-clip: text;
+                color: transparent;
+                box-shadow: inset 0 0 10px black;
+            }
+        }
+    </style>
+    <script>
+        var i = 0;
+        setInterval(changeimage,10000);
+        function changeimage() {
+            if(i==0){
+                document.getElementById('text').style.display="none";
+                document.getElementById('img1').style.display="none";
+                document.getElementById('img3').style.display="block";
+            }
+            else if(i==1){
+                  document.getElementById('img3').style.display="none";
+                document.getElementById('img2').style.display="block";
+            }
+            else{
+                localStorage.setItem("today","ok");
+                window.location.href="index.html";
+            }
+            i++;
+        }
+    </script>
+</head>
+
+<body>
+
+    <img src="backgroundBD.gif" alt="" width="100%" height="100%" style="z-index: 1;" id="img1">
+    <img src="finalBD.gif" alt="" width="100%" height="100%" style="z-index: 3;" id="img2">
+   
+    <img src="frameBD.png" alt="" width="100%" height="100%" style="z-index: 2;" id="img3">
+    <div id="text">
+        <h1>Friend</h1>
+    </div>
+</body>
+
+</html>
