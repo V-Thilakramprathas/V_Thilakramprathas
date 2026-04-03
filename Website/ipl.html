@@ -82,14 +82,26 @@
             </div>
             <div class="mainBody" id="mainBody">
                 <select id="team1">
+                    <option value="Yes">Choose Team</option>
                     <option value="CSK">Chennai Super Kings</option>
                     <option value="MI">Mumbai Indians</option>
                     <option value="RR">Rajasthan Royals</option>
                     <option value="KKR">Kolkata Knight Riders</option>
                     <option value="SH">Sunrisers Hyderabad</option>
+                    <option value="PK">Punjab Kings</option>
+                    <option value="RCB">Royal Challengers</option>
+                    <option value="GT">Gujarat Titans</option>
+                    <option value="DC">Delhi Capitals</option>
+                    <option value="LSG">Lucknow Super Giants</option>
                 </select>
                 <h3>VS</h3>
                 <select id="team2">
+                    <option value="No">Choose Team</option>
+                    <option value="CSK">Chennai Super Kings</option>
+                    <option value="MI">Mumbai Indians</option>
+                    <option value="RR">Rajasthan Royals</option>
+                    <option value="KKR">Kolkata Knight Riders</option>
+                    <option value="SH">Sunrisers Hyderabad</option>
                     <option value="PK">Punjab Kings</option>
                     <option value="RCB">Royal Challengers</option>
                     <option value="GT">Gujarat Titans</option>
@@ -100,10 +112,13 @@
             </div>
         </div>
         <br><br>
-        <div id="winner">
+        <div id="winner" onclick="rel()">
         </div>
     </div>
     <script>
+        function rel(){
+            location.reload();
+        }
         function spin(){
             let team1=document.getElementById("team1").value;
             let team2=document.getElementById("team2").value;
