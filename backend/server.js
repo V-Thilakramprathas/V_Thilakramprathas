@@ -4,7 +4,7 @@ app.use(express.json())
 const pool=require("./db")
 app.listen(process.env.PORT,()=>console.log("Running Successfully..."))
 
-app.get("/",async (req,res)=>{
+app.get("/getall",async (req,res)=>{
     try{
         const data=await pool.execute("SELECT * FROM name10");
         console.log(data);
